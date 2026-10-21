@@ -5,10 +5,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Michele Badi">
-  <meta name="description" content="Progetti realizzati dallo Studio Tecnico Badi del Geometra Michele Badi a Varese.">
+  <meta name="description" content="Progetti, infissi ed elaborati tecnici DWG dello Studio Tecnico Badi.">
   <title>Progetti realizzati - Studio Tecnico Badi</title>
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .progetti-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .progetti-intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .griglia-progetti {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .blocco-progetto {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .blocco-progetto:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 7px 18px rgba(0, 0, 0, 0.13);
+    }
+
+    .blocco-progetto img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .contenuto-progetto {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      padding: 20px;
+    }
+
+    .contenuto-progetto h3 {
+      margin: 0 0 12px;
+      color: #245a83;
+    }
+
+    .contenuto-progetto p {
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .download-dwg {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 11px 16px;
+      background: #245a83;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .download-dwg:hover {
+      background: #173e5b;
+    }
+
+    @media (max-width: 900px) {
+      .griglia-progetti {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .griglia-progetti {
+        grid-template-columns: 1fr;
+      }
+
+      .blocco-progetto img {
+        height: 230px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -21,44 +113,99 @@
         <li><a href="servizi.html">Servizi</a></li>
         <li><a href="contatti.html">Contatti</a></li>
         <li><a href="preventivo.html">Preventivo</a></li>
-        <li><a href="progetti.html">Progetti</a></li>
+        <li><a href="progetti.html">Progetti realizzati</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="elenco-progetti">
-      <h2>Progetti realizzati</h2>
-
-      <p>
-        In questa sezione sono disponibili alcuni blocchi realizzati dallo Studio Tecnico Badi.<br>
-        Seleziona un documento per scaricarlo.
-      </p>
-
-      <div class="progetto">
-        <h3>- infissi -</h3>
-        <p>Documentazione relativa a un intervento di ristrutturazione.</p>
-        <a href="documenti/progetto1.pdf" download>
-          Scarica il progetto (PDF)
-        </a>
+    <section class="progetti-container">
+      <div class="progetti-intro">
+        <h2>Progetti realizzati</h2>
+        <p>
+          Una raccolta di elaborati tecnici, dettagli costruttivi
+          e progetti relativi al settore edilizio.
+          Seleziona un progetto per scaricare il relativo file DWG.
+        </p>
       </div>
 
-      <div class="progetto">
-        <h3>Progetto 2 - Pratica catastale</h3>
-        <p>Documentazione relativa a un'attività catastale.</p>
-        <a href="documenti/progetto2.pdf" download>
-          Scarica il progetto (PDF)
-        </a>
-      </div>
+      <div class="griglia-progetti">
 
-      <div class="progetto">
-        <h3>Progetto 3 - Rilievo topografico</h3>
-        <p>Elaborati relativi a un rilievo tecnico.</p>
-        <a href="documenti/progetto3.pdf" download>
-          Scarica il progetto (PDF)
-        </a>
-      </div>
+        <!-- PROGETTO 1 -->
+        <article class="blocco-progetto">
+          <img src="immagini/infissi.jpg"
+               alt="Dettaglio tecnico di infissi e finestre">
+          <div class="contenuto-progetto">
+            <h3>Infissi e finestre</h3>
+            <p>
+              Elaborati tecnici relativi a finestre, serramenti
+              e dettagli di installazione.
+            </p>
+            <a class="download-dwg"
+               href="documenti/infissi.dwg"
+               download>
+              Scarica DWG
+            </a>
+          </div>
+        </article>
 
+        <!-- PROGETTO 2 -->
+        <article class="blocco-progetto">
+          <img src="immagini/porte.jpg"
+               alt="Porte interne e dettagli costruttivi">
+          <div class="contenuto-progetto">
+            <h3>Porte interne</h3>
+            <p>
+              Disegni tecnici di porte, aperture e soluzioni
+              per la distribuzione degli spazi interni.
+            </p>
+            <a class="download-dwg"
+               href="documenti/porte.dwg"
+               download>
+              Scarica DWG
+            </a>
+          </div>
+        </article>
+
+        <!-- PROGETTO 3 -->
+        <article class="blocco-progetto">
+          <img src="immagini/murature.jpg"
+               alt="Muratura e dettagli costruttivi di cantiere">
+          <div class="contenuto-progetto">
+            <h3>Murature e pareti</h3>
+            <p>
+              Elaborati relativi a stratigrafie, pareti
+              e particolari costruttivi delle murature.
+            </p>
+            <a class="download-dwg"
+               href="documenti/murature.dwg"
+               download>
+              Scarica DWG
+            </a>
+          </div>
+        </article>
+
+        <!-- PROGETTO 4 -->
+        <article class="blocco-progetto">
+          <img src="immagini/cantiere.jpg"
+               alt="Cantiere edile durante i lavori">
+          <div class="contenuto-progetto">
+            <h3>Cantiere edile</h3>
+            <p>
+              Disegni e tavole tecniche di riferimento
+              per le lavorazioni in cantiere.
+            </p>
+            <a class="download-dwg"
+               href="documenti/cantiere.dwg"
+               download>
+              Scarica DWG
+            </a>
+          </div>
+        </article>
+
+        <!-- DUPLICA QUESTO BLOCCO PER AGGIUNGERE ALTRI PROGETTI -->
+
+      </div>
     </section>
   </main>
 
