@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Michele Badi">
-  <meta name="description" content="Progetti, infissi ed elaborati tecnici DWG dello Studio Tecnico Badi.">
+  <meta name="description" content="Progetti e disegni DWG dello Studio Tecnico Badi.">
   <title>Progetti realizzati - Studio Tecnico Badi</title>
   <link rel="icon" href="logo.png" type="image/png">
   <link rel="stylesheet" href="style.css">
@@ -19,7 +19,19 @@
 
     .progetti-intro {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 40px;
+    }
+
+    .categoria-progetti {
+      margin-bottom: 50px;
+    }
+
+    .titolo-categoria {
+      color: #245a83;
+      font-size: 28px;
+      border-bottom: 3px solid #245a83;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
     }
 
     .griglia-progetti {
@@ -31,7 +43,7 @@
     .blocco-progetto {
       display: flex;
       flex-direction: column;
-      background: #fff;
+      background: white;
       border: 1px solid #ddd;
       border-radius: 10px;
       overflow: hidden;
@@ -59,9 +71,10 @@
       padding: 20px;
     }
 
-    .contenuto-progetto h3 {
-      margin: 0 0 12px;
-      color: #245a83;
+    .contenuto-progetto h4 {
+      color: #333;
+      margin: 0 0 10px;
+      font-size: 19px;
     }
 
     .contenuto-progetto p {
@@ -78,7 +91,6 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
-      text-align: center;
     }
 
     .download-dwg:hover {
@@ -98,6 +110,10 @@
 
       .blocco-progetto img {
         height: 230px;
+      }
+
+      .titolo-categoria {
+        font-size: 24px;
       }
     }
   </style>
@@ -119,94 +135,125 @@
   </header>
 
   <main>
-    <section class="progetti-container">
+    <div class="progetti-container">
+
       <div class="progetti-intro">
         <h2>Progetti realizzati</h2>
         <p>
-          Una raccolta di elaborati tecnici, dettagli costruttivi
-          e progetti relativi al settore edilizio.
-          Seleziona un progetto per scaricare il relativo file DWG.
+          Consulta le categorie dei nostri elaborati tecnici
+          e scarica i relativi disegni in formato DWG.
         </p>
       </div>
 
-      <div class="griglia-progetti">
+      <!-- CATEGORIA INFISSI -->
+      <section class="categoria-progetti">
+        <h3 class="titolo-categoria">Infissi</h3>
 
-        <!-- PROGETTO 1 -->
-        <article class="blocco-progetto">
-          <img src="immagini/infissi.jpg"
-               alt="Dettaglio tecnico di infissi e finestre">
-          <div class="contenuto-progetto">
-            <h3>Infissi e finestre</h3>
-            <p>
-              Elaborati tecnici relativi a finestre, serramenti
-              e dettagli di installazione.
-            </p>
-            <a class="download-dwg"
-               href="documenti/infissi.dwg"
-               download>
-              Scarica DWG
-            </a>
-          </div>
-        </article>
+        <div class="griglia-progetti">
 
-        <!-- PROGETTO 2 -->
-        <article class="blocco-progetto">
-          <img src="immagini/porte.jpg"
-               alt="Porte interne e dettagli costruttivi">
-          <div class="contenuto-progetto">
-            <h3>Porte interne</h3>
-            <p>
-              Disegni tecnici di porte, aperture e soluzioni
-              per la distribuzione degli spazi interni.
-            </p>
-            <a class="download-dwg"
-               href="documenti/porte.dwg"
-               download>
-              Scarica DWG
-            </a>
-          </div>
-        </article>
+          <article class="blocco-progetto">
+            <img src="immagini/finestre.jpg"
+                 alt="Finestre e serramenti">
+            <div class="contenuto-progetto">
+              <h4>Finestre</h4>
+              <p>
+                Disegni tecnici di finestre e serramenti.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/finestre.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
 
-        <!-- PROGETTO 3 -->
-        <article class="blocco-progetto">
-          <img src="immagini/murature.jpg"
-               alt="Muratura e dettagli costruttivi di cantiere">
-          <div class="contenuto-progetto">
-            <h3>Murature e pareti</h3>
-            <p>
-              Elaborati relativi a stratigrafie, pareti
-              e particolari costruttivi delle murature.
-            </p>
-            <a class="download-dwg"
-               href="documenti/murature.dwg"
-               download>
-              Scarica DWG
-            </a>
-          </div>
-        </article>
+          <article class="blocco-progetto">
+            <img src="immagini/porte.jpg"
+                 alt="Porte interne">
+            <div class="contenuto-progetto">
+              <h4>Porte interne</h4>
+              <p>
+                Elaborati tecnici di porte e aperture interne.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/porte.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
 
-        <!-- PROGETTO 4 -->
-        <article class="blocco-progetto">
-          <img src="immagini/cantiere.jpg"
-               alt="Cantiere edile durante i lavori">
-          <div class="contenuto-progetto">
-            <h3>Cantiere edile</h3>
-            <p>
-              Disegni e tavole tecniche di riferimento
-              per le lavorazioni in cantiere.
-            </p>
-            <a class="download-dwg"
-               href="documenti/cantiere.dwg"
-               download>
-              Scarica DWG
-            </a>
-          </div>
-        </article>
+          <article class="blocco-progetto">
+            <img src="immagini/serramenti.jpg"
+                 alt="Dettaglio serramenti">
+            <div class="contenuto-progetto">
+              <h4>Serramenti</h4>
+              <p>
+                Dettagli e particolari costruttivi dei serramenti.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/serramenti.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
 
-        <!-- DUPLICA QUESTO BLOCCO PER AGGIUNGERE ALTRI PROGETTI -->
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- CATEGORIA CANTIERE -->
+      <section class="categoria-progetti">
+        <h3 class="titolo-categoria">Cantiere</h3>
+
+        <div class="griglia-progetti">
+
+          <article class="blocco-progetto">
+            <img src="immagini/murature.jpg"
+                 alt="Murature in cantiere">
+            <div class="contenuto-progetto">
+              <h4>Murature</h4>
+              <p>
+                Disegni e dettagli costruttivi delle murature.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/murature.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
+
+          <article class="blocco-progetto">
+            <img src="immagini/pareti.jpg"
+                 alt="Pareti e divisori">
+            <div class="contenuto-progetto">
+              <h4>Pareti e divisori</h4>
+              <p>
+                Elaborati tecnici di pareti interne e divisori.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/pareti.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
+
+          <article class="blocco-progetto">
+            <img src="immagini/dettagli-cantiere.jpg"
+                 alt="Dettagli costruttivi di cantiere">
+            <div class="contenuto-progetto">
+              <h4>Dettagli costruttivi</h4>
+              <p>
+                Particolari tecnici per le lavorazioni in cantiere.
+              </p>
+              <a class="download-dwg"
+                 href="documenti/dettagli-cantiere.dwg" download>
+                Scarica DWG
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <footer>
