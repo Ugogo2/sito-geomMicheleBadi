@@ -554,8 +554,9 @@ li {
 .blocco-progetto img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 150px;
   object-fit: contain;
+  background-color: white;
 }
 
 
