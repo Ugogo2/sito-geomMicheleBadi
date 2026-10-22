@@ -619,15 +619,19 @@ li {
   background-color: #173e5b;
 }
 
-.progetti-container .griglia-progetti .blocco-progetto > img {
-  display: block !important;
+
+.progetti-container .blocco-progetto {
+  min-height: 0;
+}
+
+.progetti-container .blocco-progetto > img {
   width: 100% !important;
   height: 120px !important;
+  flex: 0 0 120px !important;
+  object-fit: scale-down !important;
   min-height: 0 !important;
   max-height: 120px !important;
-  object-fit: contain !important;
-  flex: 0 0 120px !important;
+  padding: 10px;
   box-sizing: border-box;
-  background-color: #fff;
 }
 
