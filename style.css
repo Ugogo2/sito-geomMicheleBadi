@@ -619,3 +619,15 @@ li {
   background-color: #173e5b;
 }
 
+.progetti-container .griglia-progetti .blocco-progetto > img {
+  display: block !important;
+  width: 100% !important;
+  height: 120px !important;
+  min-height: 0 !important;
+  max-height: 120px !important;
+  object-fit: contain !important;
+  flex: 0 0 120px !important;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
